@@ -1,92 +1,82 @@
+/* Section styling */
 .contacts-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   background-color: #0d1117;
-  color: #d3d3d3;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Section title */
 .contacts-title {
-  text-align: center;
   color: #00c896;
   font-size: 2rem;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
-/* Two-column layout */
-.contacts-container {
+/* Contact items container */
+.contacts-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1000px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* spacing between cards */
+  max-width: 600px;
   margin: 0 auto;
 }
 
-/* Left Column */
-.contacts-info {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
+/* Individual contact card */
 .contact-item {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  align-items: center; /* center vertically */
+  background-color: #161b22;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  transition: background-color 0.3s;
 }
 
+/* Hover effect */
+.contact-item:hover {
+  background-color: #21262d;
+}
+
+/* Icon styling */
 .contact-icon {
   color: #00c896;
+  margin-right: 20px; /* space between icon and text */
+  flex-shrink: 0; /* keep icon size consistent */
 }
 
-/* Right Column */
-.contacts-form {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-.contact-form {
+/* Text container next to icon */
+.contact-item div {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
+  justify-content: center; /* center vertically next to icon */
+  text-align: left;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 2px solid #00c896;
-  border-radius: 5px;
-  background-color: #0d1117;
+/* Heading inside card */
+.contact-item h3 {
+  color: #00c896;
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Paragraphs inside card */
+.contact-item p {
   color: #d3d3d3;
+  margin: 2px 0;
   font-size: 1rem;
 }
 
-.contact-form button {
-  padding: 10px;
-  border: none;
-  background-color: #00c896;
-  color: #0d1117;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+/* Links inside card */
+.contact-item a {
+  color: #d3d3d3;
+  text-decoration: underline;
 }
 
-.contact-form button:hover {
-  background-color: #00a075;
-}
-
-.form-status {
-  margin-top: 10px;
+.contact-item a:hover {
   color: #00c896;
-  font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .contacts-container {
-    flex-direction: column;
-  }
 }
