@@ -7,6 +7,8 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Translator from "./components/Translator";
+import Contacts from "./components/Contacts";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Translator />
       <Projects />
       <Education />
+      <Contacts/>
     </div>
   );
 }

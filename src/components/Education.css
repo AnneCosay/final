@@ -1,5 +1,51 @@
 .education-section {
-  background: #ffffff;
-  padding: 3rem 2rem;
-  color: #111827;
+  padding: 80px 20px;
+  background-color: #0d1117;
+  text-align: center;
+}
+
+.education-title {
+  color: #00c896;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.education-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.education-item {
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  border-left: 4px solid #00c896;
+  padding-left: 15px;
+}
+
+.education-item h3 {
+  color: #00c896;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.education-item p {
+  color: #d3d3d3;
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.certificate-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0 20px;
+  border: 2px solid #00c896;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.certificate-image:hover {
+  transform: scale(1.05);
 }
